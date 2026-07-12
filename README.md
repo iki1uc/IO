@@ -15,3 +15,26 @@ ohne interne System-Einsicht.
 ## Pipeline 0 → 1 → 2 → 4
 Die Pipeline bildet das Verhalten der vier Stationen ab:
 
+[0] STATUS → OI
+[1] ORT    → DIM
+[2] ROUTE  → IO
+[4] VALUE  → VAL
+
+
+## Dateien
+- index.html – Übersicht
+- l.html – Stationenliste
+- r.html – Pipeline-Ausführung
+- s.html – Bewertung
+- time_3x11_scroll_zoom.html – Visualisierung
+- ID.html – Identifikation
+- README.md – Dokumentation
+
+## Eigenschaften
+- SYSTEM = OFF  
+- IKI = OFF  
+- MARKT = TRUE  
+- TRANSPARENT = TRUE  
+- INTERN = TRUE  
+
+BENCH bleibt neutral, legal, technisch sauber und vollständig kontrollierbar.
