@@ -1,64 +1,22 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<title>IO · Portal</title>
+<h1>BENCH · Übersicht</h1>
 
-<style>
-body { background:#111; color:#0f0; font-family:Consolas; padding:20px; }
-h1 { color:#6f6; }
-.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:20px; }
-.cell { background:#222; padding:15px; border:1px solid #333; border-radius:6px; min-height:120px; }
-.title { font-weight:bold; margin-bottom:5px; }
-</style>
-</head>
+<pre>
+SYSTEM = OFF
+IKI = OFF
+MARKT = TRUE
+TRANSPARENT = TRUE
+INTERN = TRUE
 
-<body>
+Pipeline:
+[0] RESPO.STATUS → OI
+[1] RESPO.ORT    → DIM
+[2] RESPO.ROUTE  → IO
+[4] RESPO.VALUE  → VAL
+</pre>
 
-<h1>IO · Portal</h1>
-<div class="grid" id="grid"></div>
-
-<script>
-const chain = [
-  { name:"IO ROOT", url:"https://iki1uc.github.io/IO/" },
-  { name:"IO ID", url:"https://iki1uc.github.io/IO/ID.html" },
-  { name:"IO TIME", url:"https://iki1uc.github.io/IO/time_3x11_scroll_zoom.html" }
-];
-
-const grid = document.getElementById("grid");
-
-chain.forEach((item,i)=>{
-  const cell=document.createElement("div");
-  cell.className="cell";
-  cell.id="slot"+i;
-  cell.innerHTML=`<div class="title">${item.name}</div>waiting…`;
-  grid.appendChild(cell);
-});
-
-async function scan(){
-  for(let i=0;i<chain.length;i++){
-    const slot=document.getElementById("slot"+i);
-    const item=chain[i];
-    try{
-      const res=await fetch(item.url);
-      slot.innerHTML=
-        `<div class="title">${item.name}</div>`+
-        `POS: ${i+1}<br>`+
-        `URL: ${item.url}<br>`+
-        (res.ok?"ONLINE ✓":"ERROR ✗")+` (${res.status})`;
-    }catch(err){
-      slot.innerHTML=
-        `<div class="title">${item.name}</div>`+
-        `POS: ${i+1}<br>`+
-        `URL: ${item.url}<br>`+
-        `EXCEPTION ✗<br>${err.message}`;
-    }
-  }
-}
-
-scan();
-setInterval(scan,3000);
-</script>
-
-</body>
-</html>
+<h2>Module</h2>
+<ul>
+  <li><a href="l.html">LIST</a></li>
+  <li><a href="r.html">RUN</a></li>
+  <li><a href="s.html">SCORE</a></li>
+</ul>
