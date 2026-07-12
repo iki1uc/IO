@@ -1,19 +1,17 @@
-# IO · Mini‑Portal (iki1uc System)
+# BENCH · RESPO-Pipeline
 
-**IO** ist ein leichtes Modul im iki1uc‑Universum.  
-Es besteht aus drei Kernseiten:
+Dieses Repository enthält die neutrale BENCH-Struktur mit den vier neuen RESPO-Trägern:
 
-- **index.html** → Portal + Status‑Scan  
-- **ID.html** → ID‑Modul  
-- **time_3x11_scroll_zoom.html** → Zeit‑Modul (3×11)
+- RESPO.STATUS → OI (Stufe 0)
+- RESPO.ORT    → DIM (Stufe 1)
+- RESPO.ROUTE  → IO (Stufe 2)
+- RESPO.VALUE  → VAL (Stufe 4)
 
-IO ist kompatibel mit:
+## Ziel
+Alle alten BENCH-Dateien bleiben vollständig erhalten.  
+Die neuen RESPO-Träger übernehmen die transparente Darstellung,  
+ohne interne System-Einsicht.
 
-- ART.link  
-- TriAxiom  
-- MA³  
-- RAW‑SYS‑IKI‑AXI‑ATOR  
-- Respo‑Rotation  
-- Scan‑Ghost  
+## Pipeline 0 → 1 → 2 → 4
+Die Pipeline bildet das Verhalten der vier Stationen ab:
 
-IO ist ein *Mini‑System*, das als Baustein für größere Projekte dient.
