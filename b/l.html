@@ -1,16 +1,17 @@
-
-<h1>BENCH · LIST</h1>
+<h1>IO · LIST</h1>
 
 <pre>
-LIST zeigt alle Stationen und ihre RESPO‑Träger.
+LIST zeigt die Station IO und ihren RESPO‑Träger.
+TRANSPARENT = TRUE
+WAHRHEIT = TRUE
 SYSTEM = OFF
 IKI = OFF
 MARKT = TRUE
+
+Pipeline:
+[2] RESPO.ROUTE → IO
 </pre>
 
 <ul>
-  <li>OI  → RESPO.STATUS → Stufe 0</li>
-  <li>DIM → RESPO.ORT    → Stufe 1</li>
-  <li>IO  → RESPO.ROUTE  → Stufe 2</li>
-  <li>VAL → RESPO.VALUE  → Stufe 4</li>
+  <li>[IO](ca://s?q=IO_erklaeren) → RESPO.ROUTE → Stufe 2</li>
 </ul>
