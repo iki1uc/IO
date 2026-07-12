@@ -1,23 +1,19 @@
-# iki1uc – ROOT
+# IO · Mini‑Portal (iki1uc System)
 
-## Zweck
-Dieses Repository bildet den Ursprung der gesamten Struktur.  
-Es stellt die öffentliche Identität des Systems bereit und dient  
-als Einstiegspunkt für alle Module, Achsen und Bereiche.
+**IO** ist ein leichtes Modul im iki1uc‑Universum.  
+Es besteht aus drei Kernseiten:
 
-## Identität
-- CORE: iki1uc  
-- VERSION: 1.0  
-- CODE: RAW  
-- LAGE: ROOT / Creator / NC  
-- STATUS: Online  
+- **index.html** → Portal + Status‑Scan  
+- **ID.html** → ID‑Modul  
+- **time_3x11_scroll_zoom.html** → Zeit‑Modul (3×11)
 
-## Inhalt
-- index.html – öffentliche Landing‑Page  
-- ID.html – Identitätsdarstellung  
-- visual/ – Visualisierungen  
-- modules/ – Verlinkte System‑Repos  
+IO ist kompatibel mit:
 
-## Hinweis
-Dieses Repository enthält keine Engine‑Mechanismen.  
-Es dient ausschließlich der öffentlichen Darstellung und Struktur.
+- ART.link  
+- TriAxiom  
+- MA³  
+- RAW‑SYS‑IKI‑AXI‑ATOR  
+- Respo‑Rotation  
+- Scan‑Ghost  
+
+IO ist ein *Mini‑System*, das als Baustein für größere Projekte dient.
