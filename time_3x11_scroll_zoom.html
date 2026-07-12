@@ -1,32 +1,10 @@
-<h1>BENCH · time_3x11 · Scroll & Zoom</h1>
+<h1>IO · TIME 3×11 · Scroll & Zoom</h1>
 
-<style>
-  body { font-family: monospace; background: #111; color: #eee; }
-  .block { margin: 20px; padding: 20px; border: 1px solid #444; }
-  .stage { font-size: 20px; margin-bottom: 10px; }
-  .pipe { font-size: 16px; color: #ccc; }
-</style>
+<pre>
+Stufe 2 → ROUTE → IO
+Vor: DIM
+Nach: VAL
+</pre>
 
-<div class="block">
-  <div class="stage">Pipeline 0 → 1 → 2 → 4</div>
-  <div class="pipe">[0] RESPO.STATUS → OI</div>
-  <div class="pipe">[1] RESPO.ORT    → DIM</div>
-  <div class="pipe">[2] RESPO.ROUTE  → IO</div>
-  <div class="pipe">[4] RESPO.VALUE  → VAL</div>
-</div>
-
-<div class="block">
-  <div class="stage">Scroll / Zoom Darstellung</div>
-  <p>Diese Ansicht zeigt die vier Stufen der Pipeline in einer linearen Zeitachse.</p>
-  <p>Alle Werte sind transparent, aber systemintern artikuliert.</p>
-</div>
-
-<div class="block">
-  <pre>
-SYSTEM = OFF
-IKI = OFF
-MARKT = TRUE
-TRANSPARENT = TRUE
-INTERN = TRUE
-  </pre>
-</div>
+<p>IO ist die Verbindungsstation der Pipeline.</p>
+<p>Alle Werte sind transparent, aber systemintern artikuliert.</p>
