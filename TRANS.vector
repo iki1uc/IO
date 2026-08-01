@@ -1,0 +1,11 @@
+TRANS_WARB {
+  io: KANAL.io,
+  oi: KANAL.oi,
+  SCALE: Φ(t),
+  TRANSPORT: transport,
+  DUAL: dualTransport,
+  AXIOME: Komplettum.Achsen,
+  OPERATOR: { XI, IX, X4 },
+  HIGHWAY: Highway,
+  SLALOM: Slalom
+}
