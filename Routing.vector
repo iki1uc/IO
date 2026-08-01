@@ -1,0 +1,7 @@
+EAR = anchor
+EON = stabilize
+EXP = expand
+AIR = up
+AIV = down
+io → EAR → EON → EXP
+oi → AIR ↕ AIV
