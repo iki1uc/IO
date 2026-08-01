@@ -1,0 +1,8 @@
+KANAL.io {
+  DIR: input,
+  FLOW: +1,
+  SCALE: Φ(t),
+  MODE: continuum,
+  AXIS: EAR → EON → EXP,
+  OPERATOR: IX → X4 → XI
+}
