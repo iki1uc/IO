@@ -1,17 +1,19 @@
-# IO – Route / Verbindung
+IO {
+  DIR: dual,
+  MODE: continuum,
+  SCALE: Φ(t),
 
-IO ist die Verbindungsstation der BENCH‑Pipeline.
+  TRANSPORT: Δx · K(t),
+  DUAL: { io: +, oi: - },
 
-RESPO‑Träger:
-- RESPO.ROUTE → Stufe 2
+  AXIOME: { EAR, EON, EXP, AIR, AIV },
+  OPERATOR: { IX, X4, XI },
 
-Eigenschaften:
-- SYSTEM = OFF
-- IKI = OFF
-- MARKT = TRUE
-- TRANSPARENT = TRUE
-- INTERN = TRUE
+  HIGHWAY: linear,
+  SLALOM: 3 → 4,
 
-Pipeline:
-0 → 1 → 2 → 4  
-OI → DIM → IO → VAL
+  ROUTING: {
+    io: EAR → EON → EXP,
+    oi: AIR ↕ AIV
+  }
+}
