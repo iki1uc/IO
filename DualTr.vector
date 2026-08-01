@@ -1,0 +1,5 @@
+function dualTransport(io, oi, dx, t) {
+    const K = 1 / (1 - t);
+    io.value = dx * K;
+    oi.value = -dx * K;
+}
