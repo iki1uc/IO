@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>IO · Index · RAW</title>
+<title>IO · Input‑Index · RAW</title>
 
 <style>
   body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
@@ -18,36 +18,40 @@
 
 <body>
 
-<h1>IO · Index</h1>
+<h1>IO · Input‑Index</h1>
 
 <div class="box">
   <div class="title">Navigation</div>
   <ul>
     <li><a href="ID.html">ID</a></li>
     <li><a href="README.md">README</a></li>
-    <li><a href="l.html">LIST</a></li>
-    <li><a href="r.html">RUN</a></li>
-    <li><a href="s.html">SCORE</a></li>
-    <li><a href="c.html">4×4‑Modul</a></li>
-    <li><a href="cc.html">8×8‑Modul</a></li>
-    <li><a href="ccc.html">81‑Modul</a></li>
-    <li><a href="fin.html">Final‑Modul</a></li>
-    <li><a href="time_3x11_scroll_zoom.html">TIME 3×11</a></li>
+    <li><a href="DualTr.vector">DualTransport</a></li>
+    <li><a href="Highway.vector">Highway</a></li>
+    <li><a href="Routing.vector">Routing</a></li>
+    <li><a href="Slalom.vector">Slalom</a></li>
+    <li><a href="TRANS.vector">TRANS‑WARB</a></li>
+    <li><a href="WARB KANAL.vector">KANAL‑io</a></li>
+    <li><a href="RECHNUNG.js">Transport‑Rechnung</a></li>
+    <li><a href="continuumSlide.js">continuumSlide</a></li>
+    <li><a href="axiom-dreieck-6.csv">Axiom‑Dreieck‑6</a></li>
+    <li><a href="modul-io-8.csv">Modul‑IO‑8</a></li>
   </ul>
 </div>
 
 <div class="box">
-  <div class="title">Unendlichkeits‑Formel</div>
+  <div class="title">Unendlichkeits‑Operator</div>
   <pre>
 K(t) = 1 / (1 - t)
+Φ(t) = φ∞ · K(t)
   </pre>
 </div>
 
 <div class="box">
-  <div class="title">Transport‑Rechnung</div>
+  <div class="title">Transport‑Rechnung (IO)</div>
   <pre>
 T_io(t) = +Δx · K(t)
-T_oi(t) = -Δx · K(t)
+io = +Δx · K(t)
+oi = -Δx · K(t)
   </pre>
 </div>
 
@@ -72,7 +76,6 @@ AIR = up
 AIV = down
 
 io → EAR → EON → EXP
-oi → AIR ↕ AIV
   </pre>
 </div>
 
@@ -98,17 +101,25 @@ SLIDE: continuum
 </div>
 
 <div class="box">
-  <div class="title">TRANS WARB Modul</div>
+  <div class="title">TRANS‑WARB</div>
   <pre>
 io: KANAL.io
 oi: KANAL.oi
 SCALE: Φ(t)
-TRANSPORT: transport
+TRANSPORT: T_io(t)
 DUAL: dualTransport
 AXIOME: Komplettum.Achsen
 OPERATOR: { XI, IX, X4 }
 HIGHWAY: Highway
 SLALOM: Slalom
+  </pre>
+</div>
+
+<div class="box">
+  <div class="title">Reise‑Formel</div>
+  <pre>
+HOME → (6 Axiome) → ORT
+→ TRANS‑WARB → CUBIT → TRANS‑WARB → ZIEL
   </pre>
 </div>
 
